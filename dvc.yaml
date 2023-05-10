@@ -1,0 +1,8 @@
+stages:
+  featurization:
+    cmd: python src/feature_engg.py
+    deps:
+    - data/uber.csv
+    - src/feature_engg.py
+    outs:
+    - data/processed_uber.csv
