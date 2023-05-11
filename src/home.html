@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Predict Uber Fare Price</title>
+    </head>
+    <body>
+        <h1>Predict Uber Fare Price</h1>
+        <p>Enter the following information to predict the fare price:</p>
+        <form action="/api" method="POST">
+            <label for="pickup_datetime">Pickup Date/Time:</label>
+            <input type="text" id="pickup_datetime" name="pickup_datetime"><br><br>
+            <label for="pickup_longitude">Pickup Longitude:</label>
+            <input type="text" id="pickup_longitude" name="pickup_longitude"><br><br>
+            <label for="pickup_latitude">Pickup Latitude:</label>
+            <input type="text" id="pickup_latitude" name="pickup_latitude"><br><br>
+            <label for="dropoff_longitude">Dropoff Longitude:</label>
+            <input type="text" id="dropoff_longitude" name="dropoff_longitude"><br><br>
+            <label for="dropoff_latitude">Dropoff Latitude:</label>
+            <input type="text" id="dropoff_latitude" name="dropoff_latitude"><br><br>
+            <label for="passenger_count">Passenger Count:</label>
+            <input type="text" id="passenger_count" name="passenger_count"><br><br>
+            <input type="submit" value="Predict">
+        </form>
+    </body>
+</html>

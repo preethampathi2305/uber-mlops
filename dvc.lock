@@ -1,0 +1,15 @@
+schema: '2.0'
+stages:
+  featurization:
+    cmd: python src/feature_engg.py
+    deps:
+    - path: data/uber.csv
+      md5: 9fb1c86268acf4f5025e8078cb1282ca
+      size: 23458139
+    - path: src/feature_engg.py
+      md5: ca2d1f7ab0ba5c3d5740e92e32221cf1
+      size: 3233
+    outs:
+    - path: data/processed_uber.csv
+      md5: b6a4d715e3ae42a36bca9ac35ac84005
+      size: 39688541

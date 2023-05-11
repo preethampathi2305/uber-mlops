@@ -5,8 +5,8 @@ import numpy as np
 def distance(row):
     return geopy.distance.geodesic(row['pickup_coords'], row['dropoff_coords']).miles
 
-if __name__ == '__main__'
-	uber = pd.read_csv('../data/uber.csv')
+if __name__ == '__main__':
+	uber = pd.read_csv('data/uber.csv')
 	uber.drop('Unnamed: 0', axis=1, inplace=True)
 
 	uber['pickup_year']=pd.DatetimeIndex(uber['pickup_datetime']).year
@@ -67,4 +67,4 @@ if __name__ == '__main__'
 
 	uber.drop(['pickup_longitude','pickup_latitude','dropoff_longitude','dropoff_latitude'],axis=1,inplace=True)
 
-	uber.to_csv('processed_uber.csv')
+	uber.to_csv('data/processed_uber.csv')
